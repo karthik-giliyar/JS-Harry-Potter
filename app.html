@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Harry Potter</title>
+</head>
+<body>
+    <!-- ******************  HEADER  ********************** -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h2 class="logo-title">Harry-Potter</h2>
+            </div>
+            <div class="search">
+                <div class="search-container">
+                    <input class="search-bar" type="search" placeholder="Search movies name here">
+                    <a class="iclass" href="#"><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li class="li-fav">Fav 
+                        <i class="fa fa-heart"></i>
+                        <div class="num">0</div>
+                    </li>
+                    <li class="login-btn">Login</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-page">
+        <div class="login-conatainer">
+            <div class="login">
+                <form class="input" action="#">
+                    <input class="input-val" type="text" name=""placeholder="Username" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" autp-complete="on" >
+                    <i class="user fa fa-user"></i>
+                    <input class="input-val" type="password" placeholder="Password" required pattern="?=.{8,}" autp-complete="on">
+                    <i class="password fa fa-lock"></i>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************  BANNER  ********************** -->
+
+    <div class="banner">
+        <span><i class="fa fa-angle-left"></i></span>
+        <span><i class="fa fa-angle-right"></i></span>
+        <div class="banner-img banner-img1">
+            <img src="./images/banner-img.jpg" alt="banner-img1">
+        </div>
+
+        <div class="banner-img banner-img2">
+            <img src="./images/banner-img2.jpg" alt="banner-img2">
+        </div>
+        <div class="banner-img banner-img3">
+            <img src="./images/banner-img3.jpg" alt="banner-img3">
+        </div>
+        <div class="dots">
+            <div class="dot One"></div>
+            <div class="dot Two"></div>
+            <div class="dot Three"></div>
+        </div>
+    </div>
+
+    <!-- ******************  container  ********************** -->
+    
+    <section class="content">
+        <div class="joners">
+            <h1 title="Select the movie type here">Joner</h1>
+            <ul>
+                <li>Drama</li>
+                <li>Fantasy</li>
+                <li>Action</li>
+                <li>Horror</li>
+                <li>Comedy</li>
+                <li>Adventure</li>
+                <li>Animated</li>
+                <li>Historical</li>
+                <li>Science Fiction</li>
+                <li>Thriller</li>
+            </ul>
+        </div>
+
+
+        <div class="movie-collection">
+
+            <!-- ***************************UPCOMINNG**************************** -->
+
+            <div class="upcoming">
+                <div class="content-header">
+                    <div class="name"><span>Harry Potter . . .</span></div>
+                    <div class="see-more"><a href="#">see more</a></div>
+                </div>
+                <div class="movie-container">
+                    <!-- <div class="slider">
+                        <div class="slider-img-container">
+                            <div class="slider-img">
+                                <img src="https://image.tmdb.org/t/p/w500${result.poster_path}" alt="movie-poster">
+                            </div>
+                            <div class="slider-content">
+                                <div class="names"><p>${result.title}</p></div>
+                                <div class="contents">
+                                    <div class="rating">
+                                        IMBD : <span>10</span>
+                                    </div>
+                                    <button class="btn2">View more</button>
+                                </div>
+                                <div class="fav">
+                                    <div class="fav-img">
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+            
+                   <!-- <div class="slider">
+                        <div class="slider-img-container">
+                            <div class="slider-img">
+                                <img src="https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="movie-poster">
+                            </div>
+                            <div class="all-contents">
+                                <div class="slider-content">
+                                    <div class="name">Name</div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            IMBD : <span>10</span>
+                                        </div>
+                                        <button class="btn2">View more</button>
+                                    </div>
+                                </div>
+                                <div class="fav">
+                                    <div class="fav-img">
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+
+            <!-- ***************************LATEST**************************** -->
+
+            <!-- <div class="latest">
+                <div class="content-header">
+                    <div class="name"><span>Latest Movies . . .</span></div>
+                    <div class="see-more"><a href="#">see more</a></div>
+                </div>
+                <div class="movie-container">
+                    <div class="items">
+                        <div class="movie-poster">
+                            <img src="" alt="">
+                        </div>
+                        <div class="movie-desc">
+                            <div class="movie-name">
+                                <h3>Nature</h3>
+                            </div>
+                            <div class="movie-rating">
+                                <div class="ratings">
+                                    IMBD : 
+                                    <span>10</span>
+                                </div>
+                                <div class="viewmore">
+                                    Veiw more
+                                </div>
+                            </div>
+                        </div> 
+                    </div>    
+                </div>
+            </div> -->
+
+            <!-- ***************************TOP RATED**************************** -->
+
+            <!-- <div class="top-rated">
+                <div class="content-header">
+                    <div class="name"><span>Top-rated Movies . . .</span></div>
+                    <div class="see-more"><a href="#">see more</a></div>
+                </div>
+                <div class="movie-container">
+                    <div class="items">
+                        <div class="movie-poster">
+                            <img src="" alt="">
+                        </div>
+                        <div class="movie-desc">
+                            <div class="movie-name">
+                                <h3>Nature</h3>
+                            </div>
+                            <div class="movie-rating">
+                                <div class="ratings">
+                                    IMBD : 
+                                    <span>10</span>
+                                </div>
+                                <div class="viewmore">
+                                    Veiw more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         -->
+                
+
+            <!-- ***************************POPULAR****************************** -->
+            <!-- <div class="popular">
+                <div class="content-header">
+                    <div class="name"><span>Popular Movies . . .</span></div>
+                    <div class="see-more"><a href="#">see more</a></div>
+                </div>
+                <div class="movie-container">
+                    <div class="items">
+                        <div class="movie-poster">
+                            <img src="" alt="">
+                        </div>
+                        <div class="movie-desc">
+                            <div class="movie-name">
+                                <h3>Nature</h3>
+                            </div>
+                            <div class="movie-rating">
+                                <div class="ratings">
+                                    IMBD : 
+                                    <span>10</span>
+                                </div>
+                                <div class="viewmore">
+                                    Veiw more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section> 
+
+    <!-- ********************************* FOOTER ************************************* -->
+
+    <!-- <div class="footer">
+
+    </div> -->
+<script src="app.js"></script>
+</body>
+</html>
