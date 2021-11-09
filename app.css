@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ********************HEADER************************ */
+
+.header{
+    width: 100%;
+    height: 60px;;
+    background-color:rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container{
+    width: 90%;
+    height: 60px;
+    display: flex;
+}
+
+.logo{
+    width: 15%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.logo>.logo-title{
+    color: white;
+}
+
+.search{
+    width: 55%;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.search-container{
+    width: 80%;
+    position: relative;
+}
+.search-bar{
+    width: 100%;
+    padding: .5rem 2rem .5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    font-size: .9rem;
+}
+.search-container>a{
+    position: absolute;
+    top: .2rem;
+    right: .5rem;
+}
+
+.header-nav{
+    width: 30%;
+    height: 60px;
+}
+.header-nav>ul{
+    height: 60px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.header-nav>ul>li{
+    width: 25%;
+    height: 60px;
+    list-style-type: none;
+    color: white;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.header-nav>ul>li>i{
+    color: red;
+}
+.header-nav>ul>.li-fav{
+    position: relative;
+}
+
+.header-nav>ul>li>.num{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color:rgb(116, 116, 194);
+    text-align: center;
+    border-radius:50%;
+    padding-bottom: 2px;
+    display:none;
+}
+.header-nav>ul>li:hover{
+    background-color:white;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+
+.login-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(133, 119, 119,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-conatainer{
+    width:40%;
+    height:70vh;
+    background-color:rgb(44,44,44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+}
+.login{
+    width: 60%;
+    height: 50%;
+    
+}
+.login>form>input{
+    width: 87%;
+    height: 30px;
+    border-radius: 30px;
+    text-indent: 20px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 40px 5px 0;
+}
+
+.input{
+    position: relative;
+}
+
+
+.input>.user{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    color: rgb(58, 58, 58);
+    font-size: 30px;
+}
+
+.input>.password{
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    color: rgb(58, 58, 58);
+    font-size: 30px;
+}
+
+.login>form>button{
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color:rgb(250, 77, 15);
+    color: white;
+}
+
+.login>form>button:hover{
+    box-shadow: 0 0 15px white;
+}
+
+/* ********************  BANNER  ************************ */
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+.banner::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.banner>span{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform:translateY(-50%);
+    font-size:50px;
+    z-index: 500;
+    color: white;
+}
+
+.banner>span:nth-child(2){
+    left: 97.5%;
+}
+
+.banner-img1{
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+}
+.banner-img1>img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.banner-img2{
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+
+}
+.banner-img2>img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.banner-img3{
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+.banner-img3>img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.dots{
+    width: 10%;
+    height:20px;
+    z-index: 100;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.dot{
+    width: 12px;
+    height:12px;
+    border-radius:50%;
+    background-color:rgb(77, 77, 77);
+    margin-right: .5rem;
+}
+
+.One{
+    background-color:black;
+}
+
+
+/* ********************  CONTENT  ************************ */
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom:3rem;
+}
+
+.joners{
+    width: 14%;
+    height:487px;
+    padding-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius:.5rem;
+    margin: .3rem;
+}
+
+.joners>h1{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px ridge white;
+    font-weight: bold;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.joners>ul{
+    width: 100%;
+}
+
+.joners>ul>li{
+    list-style-type: none;
+    text-align: center;
+    padding: .7rem;
+    color: aliceblue;
+}
+
+.joners>ul>li:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius:.5rem;
+}
+
+.movie-collection{
+    background-color: rgb(255, 255, 255);
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: .5rem;
+    border-left: 2px solid black;
+}
+
+.upcoming{
+    width: 100%;   
+    height:auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.content-header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.name{
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.see-more{
+    width:15%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.see-more>a{
+    text-decoration: none;
+}
+.see-more>a:hover{
+    color:rgb(44, 44, 44);
+}
+
+.movie-container{
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 8px;
+}
+
+.slider{
+    margin: .5rem;
+    height:300px;
+    width: 100%;
+    box-shadow: 0 0 5px black;
+}
+
+.slider-img-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} 
+
+.slider-img{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+.slider-img>img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: 5s;
+}
+.slider-img>img:hover{
+    transform:scale(1.5);
+}
+
+.slider-content{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(160, 103, 112);
+    position: relative;
+    transition: 5s ease-in-out;
+}
+
+.slider-content:hover .fav{
+    z-index: 1;
+}
+
+.fav{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(172, 204, 186, 0.541);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav>.fav-img>i{
+    font-size: 20px;
+    color: black;
+}
+.names{
+    width: 100%;
+    height: 60%;
+    color: aliceblue;
+}
+
+.names>p{
+    font-size:1rem;
+    white-space: no-wrap;
+    padding: 0 10px;
+}
+
+.contents{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating{
+    padding: .5rem 0 .5rem .5rem;
+    font-weight:bold;
+    color: white;
+}
+
+.btn2{
+    height: 80%;
+    border-radius:.3rem;
+    border: none;
+    padding: .3rem .3rem;
+    margin: 0 .5rem .2rem 0;
+}
+.btn2:hover{
+    background-color:rgb(44, 44, 44);
+    color: white;
+}
+
+/* ********************************* FOOTER *************************************  */
+
+.footer{
+    width: 100%;
+    height: 20rem;
+    background-color:gray;
+}
